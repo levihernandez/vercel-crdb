@@ -69,4 +69,5 @@ node_modules
 package-lock.json
 
 # Vercel configs
-vercel.json
+# vercel.json
+.vercel
