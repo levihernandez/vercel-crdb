@@ -67,3 +67,6 @@ cert/root.crt
 # nodeJS modules
 node_modules
 package-lock.json
+
+# Vercel configs
+vercel.json
