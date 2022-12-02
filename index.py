@@ -7,9 +7,9 @@ import json
 
 app = Flask(__name__)
 
-# engine = create_engine(os.environ["DATABASE_URL"])
-engine = create_engine(
-    "cockroachdb://{user}:{password}@{serverless-url}.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full")
+engine = create_engine(os.environ["DATABASE_URL"])
+# engine = create_engine(
+#    "cockroachdb://{user}:{password}@{serverless-url}.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full")
 conn = engine.connect()
 
 data = conn.execute(text("SELECT * FROM defaultdb.users")).fetchall()
