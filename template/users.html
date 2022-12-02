@@ -33,10 +33,9 @@
                 <h1 class="fw-light">CockroachDB Serverless + Flask + Vercel</h1>
                 <p class="lead text-muted">Deploying a Sample Flask app in Vercel connected to Cockroach Cloud
                     Serverless</p>
-                <p> Getting the <code>defaultdb.plublic.users</code> table from CockorachDB Serverless:
-                    <code>engine = create_engine(
-                        "cockroachdb://[user]:[password]@[serverless-cluster-id].cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full")
-                    </code>
+                <p> Getting the <code>defaultdb.plublic.users</code> table from CockorachDB Serverless: </br>
+                    <code>export DATABASE_URL="cockroachdb://[user]:[password]@[serverless-cluster-id].cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full&&sslrootcert=cert%2Froot.crt"</code> </br>
+                    <code>engine = create_engine() </code>
                 </p>
             </div>
         </div>
