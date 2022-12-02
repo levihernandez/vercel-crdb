@@ -62,7 +62,7 @@ target/
 .idea
 
 # CockroachDB Certs
-cert/root.crt
+# cert/root.crt
 
 # nodeJS modules
 node_modules
