@@ -16,6 +16,6 @@ Using the CockroachDB Serverless connection is quick with the following steps:
 ## Test the App
 
 * `git clone https://github.com/levihernandez/vercel-crdb.git`
-* Upload to your git repo
+* Upload to your git repo, must include your CockroachDB cert
 * Download CockroachDB Serverless certificate to `cert` dir
 * run `vercel --prod`
