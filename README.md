@@ -9,6 +9,9 @@ Using the CockroachDB Serverless connection is quick with the following steps:
   * `DATABASE_URL=cockroachdb://{user}:{password}@university-cluster-2513.6zw.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full&sslrootcert=cert/root.crt`
   * `FLASK_DEBUG=production`
   * `FLASK_APP=index.py`
+  * Flask app must use `os.environ` to get the Vercel DB connection string variable `engine = create_engine(os.environ["DATABASE_URL"])`
+* Python Flask requires the following DB libraries to work properly:
+  * `pip install sqlalchemy-cockroachdb psycopg2`
 
 ## Test the App
 
